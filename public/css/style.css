@@ -1,0 +1,8 @@
+.btn:hover {
+    transition: 0.3s;
+    transform: scale(1.3);
+}
+
+/* #add-post {
+    display: none;
+} */
