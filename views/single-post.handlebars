@@ -1,6 +1,6 @@
 {{> post-info post}}
 
-{{#if logged_in}}
+{{#if loggedIn}}
 <div class="container text-center bg-dark text-white mt-2 mb-2 pt-2 pb-1">
     <h3>Leave a Comment</h3>
         <div class="mb-3">
@@ -14,6 +14,6 @@
 
 {{> comments post.comments}}
 
-{{#if logged_in}}
-<script src="/public/js/comment.js"></script>
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
 {{/if}}

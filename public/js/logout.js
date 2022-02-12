@@ -1,5 +1,6 @@
 async function logout(event) {
     event.preventDefault();
+    alert('logout js file')
 
     const response = await fetch('/api/users/logout', {
         method: 'POST',

@@ -18,4 +18,4 @@ async function newFormHandler(event) {
     }
 };
 
-document.querySelector('#add-comment').addEventListener('submit', newFormHandler);
+document.querySelector('#add-comment').addEventListener('click', newFormHandler);

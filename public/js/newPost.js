@@ -20,6 +20,6 @@ async function newFormHandler(event) {
     }
 };
 
-document.querySelector('#add-post').addEventListener('submit', newFormHandler);
+document.querySelector('#add-post').addEventListener('click', newFormHandler);
 
 
