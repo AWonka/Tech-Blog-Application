@@ -1,0 +1,12 @@
+<div class="p-2 bg-dark text-center">
+    <h3 class="text-white mb-2">My Blog Posts</h3>
+        <a href="/dashboard/new"><button type="button" class="btn btn-light text-center" id="new-post">
+            Add New Post
+        </button></a> 
+</div>
+
+{{#if posts.length}}
+    {{#each posts as |post|}}
+        {{> dashboard-post post}}
+    {{/each}}    
+{{/if}}

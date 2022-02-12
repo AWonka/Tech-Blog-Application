@@ -1,0 +1,25 @@
+{{#if logged_in}}
+<div class="p-2 bg-dark text-center">
+    <h3 class="text-white mb-2">Write Post</h3>
+</div>
+
+<div class="container">
+    <div class="mb-3 mt-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="input" class="form-control" name= "post-title" id="post-title" placeholder="Enter Title">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+        <textarea class="form-control" name="post-content" id="post-content" rows="3" placeholder="Enter Content for Post"></textarea>
+    </div>
+    <div class="container text-center">
+        <button class="btn btn-success" id="add-post">
+            Add Post
+        </button>
+    </div>
+</div>
+{{/if}}
+
+{{#if logged_in}}
+<script src ="/public/js/newPost.js"></script>
+{{/if}}

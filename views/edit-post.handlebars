@@ -1,0 +1,28 @@
+{{#if logged_in}}
+<div class="p-2 bg-dark text-center">
+    <h3 class="text-white mb-2">Edit Post</h3>
+</div>
+
+<div class="container">
+    <div class="mb-3 mt-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="input" class="form-control" name= "post-title" id="post-title" value="{{post.title}}">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+        <textarea class="form-control" name="post-content" id="post-content" rows="3" value="{{post.content}}"></textarea>
+    </div>
+    <div class="container text-center">
+        <button class="btn btn-success" id="update-post">
+            Update Post
+        </button>
+        <button class="btn btn-danger ms-3" id="delete-post">
+            Delete Post
+        </button>
+    </div>
+</div>
+{{/if}}
+
+{{#if logged_in}}
+<script src ="/public/js/editPost.js"></script>
+{{/if}}
